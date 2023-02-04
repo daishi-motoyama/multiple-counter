@@ -16,22 +16,17 @@
   }
 </script>
 
-<div class={'button-group'}>
+<div class="flex items-center gap-6">
   <p>{currentCount}</p>
-  <button on:click={handleOnClickIncrement}>
-    +
-  </button>
-  <button on:click={handleOnClickDecrement}>
-    -
-  </button>
-  <button on:click={handleOnClickClear}>
-    クリア
-  </button>
+  <div class="flex gap-2">
+    <button class="bg-green-500 hover:bg-green-400 text-white rounded px-3 py-1" on:click={handleOnClickIncrement}>
+      +
+    </button>
+    <button class="bg-blue-500 hover:bg-blue-400 text-white rounded px-3 py-1" on:click={handleOnClickDecrement}>
+      -
+    </button>
+    <button class="bg-yellow-500 hover:bg-yellow-400 text-white rounded px-2 py-1" on:click={handleOnClickClear}>
+      クリア
+    </button>
+  </div>
 </div>
-
-<style>
-  div.button-group {
-    display: flex;
-    gap: 4px;
-  }
-</style>
