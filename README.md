@@ -15,3 +15,7 @@ yarn dev
 ````
 yarn format
 ````
+#### ビルド
+````
+yarn build
+````
