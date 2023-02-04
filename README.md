@@ -1,6 +1,11 @@
 # Multiple Counter
 **Svelte × TailwindCSS**
 
+## Site URL
+````
+https://main.d1uzdaxrtd7mwv.amplifyapp.com/
+````
+
 ## develop
 #### パッケージのインストール
 ````
@@ -11,11 +16,14 @@ yarn
 ````
 yarn dev
 ````
+***
 #### フォーマット
 ````
 yarn format
 ````
+***
 #### ビルド
 ````
 yarn build
 ````
+***
