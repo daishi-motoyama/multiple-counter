@@ -16,9 +16,9 @@
   }
 </script>
 
-<div class="flex items-center gap-6">
+<div class="flex items-center gap-4">
   <p>{currentCount}</p>
-  <div class="flex gap-2">
+  <div class="flex gap-1">
     <button
       class="bg-green-500 hover:bg-green-400 text-white rounded px-3 py-1"
       on:click={handleOnClickIncrement}
@@ -32,7 +32,7 @@
       -
     </button>
     <button
-      class="bg-yellow-500 hover:bg-yellow-400 text-white rounded px-2 py-1"
+      class="bg-yellow-500 hover:bg-yellow-400 text-white rounded px-3 py-1"
       on:click={handleOnClickClear}
     >
       0

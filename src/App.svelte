@@ -23,15 +23,15 @@
   }
 </script>
 
-<main class="mx-auto grid max-w-md gap-4 text-center">
+<main class="max-w-sm mx-auto grid gap-4 text-center">
   <h1 class="text-2xl font-black">Multiple Counter</h1>
-  <div class="grid gap-4 p-2">
+  <div class="grid gap-4">
     {#each counters as counter, index}
       <div
-        class="flex items-center justify-center gap-2 rounded bg-gray-50 p-2 shadow-lg"
+        class="flex items-center justify-center gap-1 rounded bg-gray-50 p-2 shadow-lg"
       >
         <input
-          class="rounded border border-gray-300 px-2 py-1 text-sm"
+          class="rounded border border-gray-300 px-2 py-1 mr-2 text-sm"
           bind:value={counter.title}
         />
         <Counter
@@ -40,12 +40,12 @@
           onClickDecrement={() => counter.count--}
           onClickClear={() => (counter.count = 0)}
         />
-        <button
-          class="rounded bg-red-500 px-3 py-1 text-white hover:bg-red-400"
+        <span
+          class="text-gray-500 cursor-pointer px-2"
           on:click={() => handleOnDeleteField(index)}
         >
           ✗
-        </button>
+        </span>
       </div>
     {/each}
     <button
