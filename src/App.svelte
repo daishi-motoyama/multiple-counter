@@ -25,7 +25,7 @@
 
 <main class="mx-auto grid max-w-md gap-4 text-center">
   <h1 class="text-2xl font-black">Multiple Counter</h1>
-  <div class="grid gap-4">
+  <div class="grid gap-4 p-2">
     {#each counters as counter, index}
       <div
         class="flex items-center justify-center gap-2 rounded bg-gray-50 p-2 shadow-lg"
@@ -44,7 +44,7 @@
           class="rounded bg-red-500 px-3 py-1 text-white hover:bg-red-400"
           on:click={() => handleOnDeleteField(index)}
         >
-          削除
+          ✗
         </button>
       </div>
     {/each}

@@ -35,7 +35,7 @@
       class="bg-yellow-500 hover:bg-yellow-400 text-white rounded px-2 py-1"
       on:click={handleOnClickClear}
     >
-      クリア
+      0
     </button>
   </div>
 </div>
